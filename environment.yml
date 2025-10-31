@@ -1,0 +1,27 @@
+name: omix-base
+channels:
+- defaults
+- conda-forge
+dependencies:
+- python=3.11
+- anndata
+- h5py
+- matplotlib
+- numba
+- numpy
+- pandas
+- pillow
+- pip
+- pyyaml
+- scanpy
+- scikit-image
+- scikit-learn
+- scipy
+- seaborn
+- tqdm
+- pip:
+  - shapely
+  - squidpy
+  - torch
+  - torch_geometric
+  - xarray
