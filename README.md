@@ -1,14 +1,14 @@
-# 🧬 omix-base-env
+# 🧬 omics-base-env
 
 ![Python](https://img.shields.io/badge/python-3.11-blue)
 ![License: MIT](https://img.shields.io/badge/License-MIT-green)
-![GitHub stars](https://img.shields.io/github/stars/zs144/omix-base-env?style=social)
+![GitHub stars](https://img.shields.io/github/stars/zs144/omics-base-env?style=social)
 
 A lightweight, compatible Python base environment for single-cell and spatial omics analysis.
 
 ## 🌎 Overview
 
-`omix-base-env` provides a unified, minimal environment that supports most modern omics tools (e.g., Scanpy, Squidpy, SpatialData) while minimizing disk usage and dependency conflicts. It’s ideal for researchers who frequently test or develop single-cell and spatial transcriptomics software.
+`omics-base-env` provides a unified, minimal environment that supports most modern omics tools (e.g., Scanpy, Squidpy, SpatialData) while minimizing disk usage and dependency conflicts. It’s ideal for researchers who frequently test or develop single-cell and spatial transcriptomics software.
 
 ## 🎯 Key Goals
 
@@ -20,7 +20,7 @@ A lightweight, compatible Python base environment for single-cell and spatial om
 
 ## 📂 Folder Structure
 ```
-omix-base/
+omics-base/
 │
 ├── environment.yml               # core base environment
 ├── optional-envs/                # tool-specific overlays
@@ -40,8 +40,8 @@ omix-base/
 
 ### Step 1: Clone the repo
 ```bash
-git clone https://github.com/zs144/omix-base-env.git
-cd omix-base-env
+git clone https://github.com/zs144/omics-base-env.git
+cd omics-base-env
 ```
 
 ### Step 2: Create the environment
@@ -51,13 +51,13 @@ conda env create -f environment.yml
 
 ### Step 3: Activate it
 ```bash
-conda activate omix-base-env
+conda activate omics-base-env
 ```
 
 To use Mamba instead of Conda:
 ```bash
 mamba env create -f environment.yml
-conda activate omix-base-env
+conda activate omics-base-env
 ```
 
 ## ⚙️ Usage
@@ -77,12 +77,12 @@ pip install -r requirements.txt
 
 #### Solution 3. Install a single pip-only package in the base environment
 ```bash
-conda activate omix-base
+conda activate omics-base
 pip install some-pip-only-package
 ```
 
 ### 2. Compare with other environment
-If you have another environment YAML file or requirement file, you can find which are missing in the current `omix-base-env` by running:
+If you have another environment YAML file or requirement file, you can find which are missing in the current `omics-base-env` by running:
 ```bash
 python check_packages.py <requirements.txt|environment.yml> <output_fp>
 ```
@@ -109,4 +109,4 @@ MIT License – see [LICENSE](./LICENSE) for details.
 
 If this environment helps your research, please cite the repo:
 
-Z. Sheng (2025). omix-base-env: A lightweight base environment for single-cell and spatial omics. github.com/zs144/omix-base-env
+Z. Sheng (2025). omics-base-env: A lightweight base environment for single-cell and spatial omics. github.com/zs144/omics-base-env

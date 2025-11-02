@@ -1,10 +1,10 @@
-# TODOs for omix-base-env
+# TODOs for omics-base-env
 
 ## v0.1.0
 ## Dev
 - [x] Test run all the code
 - [x] Use STING as an example to test downloading extra packages
-- [ ] Test run `tools/omix-base-env/test/test_core_imports.py`
+- [ ] Test run `tools/omics-base-env/test/test_core_imports.py`
 
 ## Environment
 - [ ] Maybe include packages for visualization such as napari

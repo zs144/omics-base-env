@@ -1,4 +1,4 @@
-name: omix-base
+name: omics-base
 channels:
 - defaults
 - conda-forge
