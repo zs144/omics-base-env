@@ -20,7 +20,7 @@ A lightweight, compatible Python base environment for single-cell and spatial om
 
 ## 📂 Folder Structure
 ```
-omics-base/
+omics-base-env/
 │
 ├── environment.yml               # core base environment
 ├── optional-envs/                # tool-specific overlays
@@ -51,13 +51,13 @@ conda env create -f environment.yml
 
 ### Step 3: Activate it
 ```bash
-conda activate omics-base-env
+conda activate omics-base
 ```
 
 To use Mamba instead of Conda:
 ```bash
 mamba env create -f environment.yml
-conda activate omics-base-env
+conda activate omics-base
 ```
 
 ## ⚙️ Usage
@@ -82,7 +82,7 @@ pip install some-pip-only-package
 ```
 
 ### 2. Compare with other environment
-If you have another environment YAML file or requirement file, you can find which are missing in the current `omics-base-env` by running:
+If you have another environment YAML file or requirement file, you can find which are missing in the current `omics-base` by running:
 ```bash
 python check_packages.py <requirements.txt|environment.yml> <output_fp>
 ```
